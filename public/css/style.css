@@ -58,7 +58,13 @@ border-bottom: 1px solid whitesmoke;
 
 .portfolio-items-wrapper{
   display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+section{
+  display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
 .portfolio-item-wrapper{
