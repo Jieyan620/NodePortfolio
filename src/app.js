@@ -18,4 +18,7 @@ app.get('/about', function (req, res) {
   })
 })
 
-app.listen(process.env.PORT || 3000)
+var port = process.env.PORT || 3001
+app.listen(port, function () {
+  console.log("app running on port 3001");
+})
