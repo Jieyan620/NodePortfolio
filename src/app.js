@@ -8,16 +8,14 @@ app.set('view engine', 'hbs')
 
 app.get('/', function (req, res) {
   res.render('index', {
-    title: "home",
-    name: "Jie"
+    title: "home"
   })
 })
 
 app.get('/about', function (req, res) {
   res.render('about', {
-    title: "home",
-    name: "Jie"
+    title: "about"
   })
 })
 
-app.listen(3000)
+app.listen(process.env.PORT||3000)
